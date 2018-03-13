@@ -1,5 +1,5 @@
 machine:
-  timezone: Asia/Tokyo
+  timezone: Asia/Shanghai
   node:
     version: 4
 

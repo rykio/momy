@@ -1,3 +1,3 @@
 'use strict'
 
-module.exports = require('./lib/tailer.js')
+module.exports = require('./bin/momy.js')
