@@ -17,11 +17,8 @@ class Momy {
    * @param {string} config_file - configulation filename
    */
   constructor(config_file) {
-    console.log(config_file)
     const config_path =  config_file || DEFAULT_CONFIG_PATH;
     this.config = JSON.parse(fs.readFileSync(process.cwd() + '/' + config_path))
-    console.log(this.config)
-
     this.tailer = new Tailer(this.config)
   }
 

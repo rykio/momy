@@ -1,6 +1,6 @@
 {
   "name": "momy-sync",
-  "version": "0.8",
+  "version": "0.8.1",
   "description": "MongoDB to MySQL replication",
   "main": "index.js",
   "bin": {
