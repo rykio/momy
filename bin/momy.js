@@ -14,12 +14,15 @@ class Momy {
 
   /**
    * Constructor
-   * @param {string} config_file - configulation filename
+   * @param {object} task - task configulation
    */
-  constructor(config_file) {
-    const config_path =  config_file || DEFAULT_CONFIG_PATH;
+  constructor(task, customUtils) {
+    const config_path =  task.config || DEFAULT_CONFIG_PATH;
     this.config = JSON.parse(fs.readFileSync(process.cwd() + '/' + config_path))
-    this.tailer = new Tailer(this.config)
+    this.tailer = new Tailer(Object.assign({},this.config,{
+      src: task.src || this.config.src,
+      dist: task.dist || this.config.dist
+    }), customUtils)
   }
 
   /**

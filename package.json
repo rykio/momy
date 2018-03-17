@@ -1,6 +1,6 @@
 {
   "name": "momy-sync",
-  "version": "0.8.1",
+  "version": "0.9.2",
   "description": "MongoDB to MySQL replication",
   "main": "index.js",
   "bin": {
@@ -25,7 +25,8 @@
     "moment": "^2.15.2",
     "mongodb": "^2.2.11",
     "mysql": "^2.12.0",
-    "sqlstring": "^2.2.0"
+    "sqlstring": "^2.2.0",
+    "superagent": "^3.8.2"
   },
   "devDependencies": {
     "co": "^4.6.0",
